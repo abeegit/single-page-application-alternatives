@@ -1,0 +1,119 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <div class="logo-wrap inner-page">
+      <div class="container">
+        <div class="logo-right">
+          <a href="#"><img src="assets/img/aveer-logo.png" alt="Aveer Logo" /></a>
+          <a href="#"><img src="assets/img/tanishq-logo.png" alt="Tanishq Logo" /></a>
+        </div>
+        <div class="logo-left">
+          <a href="index.html"><img src="assets/img/tanishq-men.png" alt="Tanisq Men" /></a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="innerpage-wrap text-center">
+      <h1>NOMINATE YOURSELF</h1>
+      <p>To nominate yourself, upload square photos sporting your favourite accessories, and stand the chance to be crowned the Tanishq Man and customise your own piece of jewellery woth 25k from the Aveer range. </p>
+      <a href="#" class="popup-link">How to submit a winning entry</a>
+      <form class="upload-wrap">
+        <div class="upload-left">
+          <div class="upload-head">
+            <h3>Upload from photos</h3>
+            <span>Up to 3 photos</span>
+          </div>
+          <div class="fileUpload">
+            <img src="assets/img/upload_icon.png" />
+            <input id="uploadBtn" type="file" class="upload">
+            <div class="upload-text">Browse from gallery</div>
+          </div>
+
+        </div>
+        <div class="upload-right">
+          <div class="upload-head">
+            <h3>I'm the Tanishq Man because...</h3>
+            <span>Under 280 characters</span>
+          </div>
+          <div class="textarea-wrap">
+            <textarea placeholder="Type your text here..."></textarea>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="preiview-btn">
+          <a href="preview.html" class="btns">Preview</a>
+        </a>
+      </form>
+    </div>
+
+    <!-- popup wrap -->
+    <div class="popup" role="alert">
+      <div class="popup-container">
+        <h4>Do you want to the be the  Tanishq Man? Here are a few tips on how you can submit a winning entry.</h4>
+        <ul>
+          <li>
+            <h5>1. Accessorise!</h5>
+            <p>It's all about the accessories. Make sure you are sporting your favourite accessories in every photograph.</p>
+          </li>
+          <li>
+            <h5>2. Lighting</h5>
+            <p>A picture with the perfect lighting is sure to make a winning entry. Ensure all your submissions are well lit!</p>
+          </li>
+          <li>
+            <h5>3. Description</h5>
+            <p>Your description should capture the essence of what makes you a Tanishq Man. Make sure you put those 280 characters to good use.</p>
+          </li>
+          <li>
+            <h5>4. Have fun!</h5>
+            <p>The Tanishq Man knows how to have a good time. Make sure you are having fun in the pictures you upload.</p>
+          </li>
+          <li>
+            <h5>5. What's in the background?</h5>
+            <p>A good picture always tells a story in the background. Make sure there is something going on there, not just a plain white wall.</p>
+          </li>
+        </ul>
+        <img src="assets/img/close-popup.png" class="popup-close" />
+      </div> <!-- popup-container -->
+    </div> <!-- popup -->
+
+    <script type="text/javascript" src="assets/js/jquery.3.2.0.min.js"></script>
+    <script>
+
+      $(document).ready(function($){
+        //open popup
+        $('.popup-link').on('click', function(event){
+          event.preventDefault();
+          $('.popup').addClass('is-visible');
+          $('body').addClass("overflow");
+        });
+  
+        //close popup
+        $('.popup').on('click', function(event){
+          if( $(event.target).is('.popup-close') || $(event.target).is('.popup') ) {
+            event.preventDefault();
+            $(this).removeClass('is-visible');
+            $('body').removeClass("overflow");
+          }
+        });
+        //close popup when clicking the esc keyboard button
+        $(document).keyup(function(event){
+            if(event.which=='27'){
+              $('.popup').removeClass('is-visible');
+            }
+          });
+      });
+
+
+    </script>
+
+  </body>
+</html>

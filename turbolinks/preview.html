@@ -1,0 +1,73 @@
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <div class="logo-wrap inner-page">
+      <div class="container">
+        <div class="logo-right">
+          <a href="#"><img src="assets/img/aveer-logo.png" alt="Aveer Logo" /></a>
+          <a href="#"><img src="assets/img/tanishq-logo.png" alt="Tanishq Logo" /></a>
+        </div>
+        <div class="logo-left">
+          <a href="index.html"><img src="assets/img/tanishq-men.png" alt="Tanisq Men" /></a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="innerpage-wrap text-center">
+      <h1>PREVIEW YOUR SUBMISSION</h1>
+
+    </div>
+    <div class="preview-wrap">
+      <div class="preview-img-wrap">
+        <div class="single-item" style="background-image:url('assets/img/img1.png')"></div>
+        <div class="single-item" style="background-image:url('assets/img/img1.png')"></div>
+        <div class="single-item" style="background-image:url('assets/img/img1.png')"></div>
+      </div>
+      <div class="preview-text-wrap">
+        <div class="preview-text">
+          I am the Tanishq Man because, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </div>
+        <form class="preview-form">
+          <div class="form-single">
+            <input type="text" placeholder="ENTER NAME">
+          </div>
+          <div class="form-single">
+            <input type="text" placeholder="ENTER MOBILE">
+          </div>
+          <div class="submit-wrap">
+            <a href="#" class="btns">Submit</a>
+          </div>
+        </form>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/jquery.3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script>
+      $(document).ready(function($){
+        
+        $('.preview-img-wrap').slick({
+          slidesToShow: 1,
+          dots: true,
+          arrows: false
+        });
+      });
+
+
+    </script>
+
+  </body>
+</html>
